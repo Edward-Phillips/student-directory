@@ -21,7 +21,7 @@ end
 
 def print(names)
   names.each do |name|
-    puts "#{name[:name]} (#{name[:cohort]} cohort)"
+    puts "#{names.index(name) + 1}. #{name[:name]} (#{name[:cohort]} cohort)"
   end
 end
 
